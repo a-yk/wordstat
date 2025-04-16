@@ -1,0 +1,49 @@
+{% extends "layouts/default.html.twig" %}
+
+{% block content %}
+    <div class="py-5 text-center">
+        <h1 class="h2">Результат</h1>
+    </div>
+    <div class="row py-4">
+        <div class="col w-100 text-center">
+            <a href="/">Назад</a>
+        </div>
+    </div>
+    <div class="row text-center justify-content-center">
+        <div class="col-4 align-self-center">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col ">Буква</th>
+                        <th scope="col">Сколько раз встречается в тексте</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if russian %}
+                        <tr>
+                            <td colspan="2">Русские буквы</td>
+                        </tr>
+                        {% for char, count in russian %}
+                            <tr>
+                                <td>{{ char }}</td>
+                                <td>{{ count }}</td>
+                            </tr>
+                        {% endfor %}
+
+                    {% endif %}
+                    {% if english %}
+                        <tr>
+                            <td colspan="2">Латинские буквы</td>
+                        </tr>
+                        {% for char, count in english %}
+                            <tr>
+                                <td>{{ char }}</td>
+                                <td>{{ count }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

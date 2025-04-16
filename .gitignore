@@ -1,0 +1,12 @@
+/node_modules
+/vendor
+.env
+.env.backup
+.env.production
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+public/css/bootstrap
+public/js/bootstrap

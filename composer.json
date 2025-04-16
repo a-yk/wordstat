@@ -1,0 +1,22 @@
+{
+    "name": "akalimullin/wordstat",
+    "require": {
+        "flightphp/core": "^3.15",
+        "twig/twig": "^3.0",
+        "symfony/dotenv": "^6.0",
+        "twbs/bootstrap": "5.3.5"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "rm -rf public/css/bootstrap",
+            "rm -rf public/js/bootstrap",
+            "cp -R vendor/twbs/bootstrap/dist/css public/css/bootstrap",
+            "cp -R vendor/twbs/bootstrap/dist/js public/js/bootstrap"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "WordStat\\": "src/"
+        }
+    }
+}
