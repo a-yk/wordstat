@@ -8,5 +8,8 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-public/css/bootstrap
-public/js/bootstrap
+var/cache/*
+
+public/*
+!public/css/
+!public/js/

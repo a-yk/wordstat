@@ -4,7 +4,9 @@
 
 ### Как запустить ###
 
-Склонировать репозиторий. Далее запустить команду cd wordstat && composer update && php -S localhost:8000 -t ./public/
+* cклонировать репозиторий;
+* переименовать файл .env.dist в .env
+* запустить команду `cd wordstat && composer update && php -S localhost:8000 -t ./public/`
 
 ### Автор ###
 
